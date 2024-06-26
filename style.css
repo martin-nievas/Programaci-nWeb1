@@ -1,0 +1,239 @@
+
+.fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/Fondo Index - Gatito Ramen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: moveBackground 2s ease forwards;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    opacity: 1;
+    animation: fadeInContent 5s ease forwards;
+    z-index: 1;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: scale(3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        z-index: -1;
+    }
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#logo {
+    width: 650px;
+    height: 550px; 
+    border-radius: 50%;
+    transition: 1s;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+    border-radius: 15%;
+    transition: 1s;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 8% auto;
+    margin-bottom: 0%;
+    padding: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgb(233, 223, 223);
+    max-width: 300px;
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);/* Inspiración Login de Intranet Da Vinci */
+    transition: 1s;
+}
+
+#formulario:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    transform-origin: bottom;
+}
+
+#formulario input{
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+#formulario label, button{
+    text-align: center;
+    margin: auto 25%;
+    font-size: 20px;
+}
+
+
+
+#errorNombre, #errorContraseña{
+    display:none;
+    color: #ca0404;
+    font-size: 15px;
+}   
+
+
+#iniciandoSesion{   
+    display: none;
+    font-size: 40px;
+    border: 1px solid rgb(5, 2, 2);
+    border-radius: 30px;
+    background-color: rgb(196, 47, 173);
+    position: fixed;
+    height: 5%;
+    width: 20%;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+#usuarioRegistrado{
+    display: none;
+    font-size: 20px;
+    border: 1px solid rgb(5, 2, 2);
+    border-radius: 30px;
+    background-color: #007BFF;
+    color: white;
+    position: fixed;
+    z-index: 5;
+    padding: 5px;
+    height: 50px;
+    width: 300px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#nuevoUsuario{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid rgb(5, 2, 2);
+    border-radius: 30px;
+    background-color: rgb(233, 223, 223);
+    height: 50px; 
+    max-width:35%;
+    margin: 40px auto; 
+    padding: 0 20px;
+    color: rgb(5, 5, 5);
+}
+
+#formNuevoUsuario{
+    display: none;
+    font-size: 20px;;
+    border: 2px solid rgb(5, 2, 2);
+    border-radius: 30px;
+    background-color: rgb(233, 223, 223);
+    position: fixed;
+    z-index: 1;
+    height: 18%;
+    padding: 10px;
+    width: 30%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#formNuevoUsuario input{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#formNuevoUsuario label{
+    margin: auto 10%;
+}
+
+#botonCrearUsuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    width: 30%;
+    height: 80%;
+    margin: 10%;
+    transition: 0.5s;
+}
+
+#botonCrearUsuario:hover{
+    background-color: #0056b3;
+    color: white;
+    transition: 0.5s;
+}
+
+#botonIniciarSesion {
+    display: flex;
+    width: 40%; 
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    margin-left: 30%;
+}
+
+#botonIniciarSesion:hover{
+    background-color: #0056b3;
+    color: white;
+    transition: 0.5s;
+}
+
+#botonRegistrar{
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#botonRegistrar:hover{
+    background-color: #0056b3;
+    color: white;
+    transition: 0.5s;
+}
