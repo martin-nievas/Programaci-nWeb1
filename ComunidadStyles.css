@@ -6,7 +6,7 @@ body {
     background-color: rgb(254, 206, 214);
 }
 
-#menu ul {
+.menu ul {
     list-style-type: none;
     margin-top: 3%;
     padding: 0;
@@ -14,36 +14,37 @@ body {
     justify-content: center;
 }
 
-#menu ul a {
-    color: rgb(0, 0, 0);
+.menu ul a {
+    color: #FFF8DB;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.35vw;
     transition: color 0.8s;
+    font-weight: bold;
 }
 
-#menu a:hover {
+.menu a:hover {
     color:#f7d171;
     text-decoration:underline;
     transition: 0.2s;
+    font-size: 1.5vw;
     
     
 }
 
-#menu ol:hover{
+.menu ol:hover{
     transform: translate(0, -5px);
     transition: 0.2s;
 }
 
 footer {
-    background-color: #a25755;
-    color: white;
+    background-color: #FFC7ED;
+    color: black;
     text-align: center;
     padding: 20px;
     position: relative;
-    margin: -10px;
     bottom: 0;
+    margin: -10px;
     width: 100%;
-    margin-top: 0;
 }
 
 #SocialLinks {
@@ -66,7 +67,7 @@ footer {
 #BotónVolverArriba, #BotónVolverAHome, #BotónLogOut {
     display: block;
     padding: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 16px;
     transition: 1s;
@@ -75,7 +76,7 @@ footer {
 }
 
 #BotónVolverArriba:hover, #BotónVolverAHome:hover, #BotónLogOut:hover {
-    color: #fe0000;
+    color: #304463;
     transform: scale(1.3);
     transition: 1,3s;
 }
@@ -83,7 +84,7 @@ footer {
 .seccion {
     padding: 20px;
     margin: 20px;
-    background-color: white;
+    background-color: #FFF8DB;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #0b0808;
     border-radius: 20px;
@@ -120,7 +121,7 @@ footer {
 }
 
 #noticia{
-  background-color: #fae1cb;
+  background-color: white;
   border: 1px solid #0b0808;
   border-radius: 20px;
   padding: 10px;
@@ -150,7 +151,7 @@ button:hover {
 .comentarios{
     border: 1px solid black;
     border-radius: 15px;
-    background-color: white;
+    background-color: #FFC7ED;
     
 }
 
@@ -169,7 +170,7 @@ button:hover {
 }
 
 #post {
-    background-color: #f1dfc3;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     padding: 10px;
@@ -178,11 +179,61 @@ button:hover {
 }
 
 #infoPost{
-     background-color: rgb(255, 255, 255);
-     border-radius: 8px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+     background-color: #FFC7ED;
+     border-radius: 12px;
+     border-color: black;
+     border: 2px solid #000000;
 }
 
 #foro h3 {
     margin: 0 0 5px 0;
+}
+
+
+---------------------------
+
+
+.hamburger-menu .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu .menu li {
+    margin-bottom: 10px;
+}
+
+.hamburger-menu .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.hamburger-icon ol {
+    font-size: 2vw;
+}
+.hamburger-icon {
+    display: none;
+}
+.hamburger-menu ul.menu {
+    display: none; 
+}
+.hamburger-menu ul.menu.open {
+    display: block; 
+}
+
+@media screen and (max-width: 1000px) {
+ .hamburger-icon {display: block;}
+ .hamburger-menu ol {text-align: center;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    #menu {display: none;}
 }

@@ -6,7 +6,7 @@ body {
     background-color: rgb(254, 206, 214);
 }
 
-#menu ul {
+.menu ul {
     list-style-type: none;
     margin-top: 3%;
     padding: 0;
@@ -14,22 +14,24 @@ body {
     justify-content: center;
 }
 
-#menu ul a {
-    color: rgb(0, 0, 0);
+.menu ul a {
+    color: #FFF8DB;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.35vw;
     transition: color 0.8s;
+    font-weight: bold;
 }
 
-#menu a:hover {
+.menu a:hover {
     color:#f7d171;
     text-decoration:underline;
     transition: 0.2s;
+    font-size: 1.5vw;
     
     
 }
 
-#menu ol:hover{
+.menu ol:hover{
     transform: translate(0, -5px);
     transition: 0.2s;
 }
@@ -40,7 +42,7 @@ body {
     text-align: center;
     position: relative;
     top:120px;
-    background: #a6c7fd;
+    background: #FFF5E1;
     border: 1px solid #0b0808;
     border-radius: 15px;
     box-shadow: 1px 1px 2px #b1b1b1;
@@ -61,16 +63,14 @@ h2{
 
 
 footer {
-    background-color: #a25755;
-    color: white;
+    background-color: #FFC7ED;
+    color: black;
     text-align: center;
     padding: 20px;
     position: relative;
-    margin: -10px;
     bottom: 0;
+    margin: -10px;
     width: 100%;
-    margin-top: 150px;
-    
 }
 
 #SocialLinks {
@@ -93,7 +93,7 @@ footer {
 #BotónVolverArriba, #BotónVolverAHome, #BotónLogOut {
     display: block;
     padding: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 16px;
     transition: 1s;
@@ -102,7 +102,7 @@ footer {
 }
 
 #BotónVolverArriba:hover, #BotónVolverAHome:hover, #BotónLogOut:hover {
-    color: #fe0000;
+    color: #304463;
     transform: scale(1.3);
     transition: 1,3s;
 }
@@ -118,12 +118,13 @@ footer {
 
 #mensajeProductoAgregadoAlCarrito {
     display: none;
-    font-size: 25px;
+    font-size: 1vw;
     font-style: oblique;
-    color: #ffffff;
+    font-weight: bolder;
+    color: white;
     padding: 10px;
     border-radius: 10px;
-    background-color: #e41270;
+    background-color: #7D8ABC;
     border: 1px solid #0b0808;
     width: 15%;
     z-index: 2;
@@ -135,8 +136,8 @@ footer {
 }
 
 .botonComprar{
-    background-color: #e41270;
-    border-color: #e41270;
+    background-color: #7D8ABC;
+    border-color: #7D8ABC;
     border-width: 1px;
     color: #fff;
     font-family: NotoSans, sans-serif;
@@ -165,7 +166,7 @@ footer {
     border-radius: 15px;
     box-shadow: 1px 1px 2px #ccd3d4;
     border-color: #000000;
-    background:-webkit-radial-gradient(center, rgb(246, 191, 241) 0%, rgb(244, 229, 243) 100%);
+    background:-webkit-radial-gradient(center, #FFF8DB 0%, #FFF5E1 100%);
     transition: 1.3s;
     width: 25%;
     height:750px;
@@ -189,7 +190,7 @@ footer {
 .producto:hover{
     transform: scale(1.08);
     transition: 1.3s;
-    background:-webkit-radial-gradient(center, rgb(247, 174, 241) 50%, rgb(244, 229, 243) 80%);
+    background:-webkit-radial-gradient(center, #FFC7ED 50%, #FFF8DB 80%);
 
 }
 
@@ -210,11 +211,59 @@ footer {
     color: #000000;
     text-align:center;
     border-radius: 15px;
-    background-color: aquamarine;
+    background-color: #FFF8DB;
     border: 1px solid #0b0808;
     width: 25%;
     position:relative;
     left: 35%;
     margin-top: 25px;
-    
 }
+
+-------
+
+
+.hamburger-menu .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu .menu li {
+    margin-bottom: 10px;
+}
+
+.hamburger-menu .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.hamburger-icon ol {
+    font-size: 2vw;
+}
+.hamburger-icon {
+    display: none;
+}
+.hamburger-menu ul.menu {
+    display: none; 
+}
+.hamburger-menu ul.menu.open {
+    display: block; 
+}
+
+@media screen and (max-width: 1000px) {
+ .hamburger-icon {display: block;}
+ .hamburger-menu ol {text-align: center;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    #menu {display: none;}
+}
+

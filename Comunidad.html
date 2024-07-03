@@ -11,17 +11,28 @@
     <link rel="stylesheet" href="DetalleRecetas.html">
     <link rel="stylesheet" href="Tienda.html">
     <link rel="stylesheet" href="panelControlUsuario.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <nav id="menu">
-        <ul>
-            <ol><a href="home.html">Home</a></ol>
-            <ol><a href="Comunidad.html">Comunidad</a> </ol>
-            <ol><a href="DetalleRecetas.html">Descubrir Recetas</a></ol>  
-            <ol><a href="Tienda.html">Tienda</a></ol>
-            <ol><a href="panelControlUsuario.html">Panel de Control</a></ol>
+    <nav class="menu" >
+        <ul id="menu">
+            <ol><a href="home.html">HOME</a></ol>
+            <ol><a href="Comunidad.html">COMUNIDAD</a> </ol>
+            <ol><a href="DetalleRecetas.html">DESCUBRIR RECETAS</a></ol>  
+            <ol><a href="Tienda.html">TIENDA</a></ol>
+            <ol><a href="panelControlUsuario.html">PANEL DE CONTROL</a></ol>
         </ul>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
+            <ul class="menu">
+                <ol><a href="home.html">Home</a></ol>
+                <ol><a href="Comunidad.html">Comunidad</a> </ol>
+                <ol><a href="DetalleRecetas.html">Descubrir Recetas</a></ol>  
+                <ol><a href="Tienda.html">Tienda</a></ol>
+                <ol><a href="panelControlUsuario.html">Panel de Control</a></ol>
+            </ul>
+        </div>
     </nav>
 
     <main id="Título">
@@ -76,11 +87,13 @@
             <h2>Foro de Discusión</h2>
             <div class="publicaciones">
                 <section id="post">
-                    <h3>Estilos y variedades de Udon</h3>
-                    <h2>Autor: Martín N</h2>
-                    <p>Buenas! El otro día me puse a cocinar el Udon siguiendo la receta de RR. Quería preguntarles a ustedes
-                         sus opiniones acerca de los estilos y variedades de Udon. ¿Cuál es el mejor para ustedes? 
-                         </p>
+                    <div id="infoPost">
+                        <h3>Estilos y variedades de Udon</h3>
+                        <h2>Autor: Martín N</h2>
+                        <p>Buenas! El otro día me puse a cocinar el Udon siguiendo la receta de RR. Quería preguntarles a ustedes
+                             sus opiniones acerca de los estilos y variedades de Udon. ¿Cuál es el mejor para ustedes? 
+                             </p>
+                    </div>
                     <textarea name="" id="campoComentario"></textarea>
                     <button type="button">Comentar</button>
                     <div class="cajaComentarios">
@@ -97,9 +110,11 @@
                 </section>
 
                 <section id="post">
-                    <h3>Gyozas:¿mejores que las empanadas argentinas?</h3>
-                    <h2>Autor: Azul C</h2>
-                    <p>Gente, estamos todos de acuerdo en que las gyozas son más ricas que las empanadas comunes no??</p>
+                    <div id="infoPost">
+                        <h3>Gyozas:¿mejores que las empanadas argentinas?</h3>
+                        <h2>Autor: Azul C</h2>
+                        <p>Gente, estamos todos de acuerdo en que las gyozas son más ricas que las empanadas comunes no??</p>
+                    </div>
                     <textarea name="" id="campoComentario"></textarea>
                     <button type="button">Comentar</button>
                     <div class="cajaComentarios">

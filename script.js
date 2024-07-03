@@ -105,3 +105,19 @@
              mensaje.style.display = "none";
          }, 2000);
    }
+
+   document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    const menu = document.querySelector('.hamburger-menu ul.menu');
+
+    // Agregar evento de clic al ícono hamburguesa
+    hamburgerIcon.addEventListener('click', function() {
+        // Alternar la clase 'open' en el menú para mostrar u ocultar
+        menu.classList.toggle('open');
+    });
+
+    // Si deseas cerrar el menú cuando se hace clic en un elemento del menú
+    menu.addEventListener('click', function() {
+        menu.classList.remove('open');
+    });
+});
