@@ -1,0 +1,176 @@
+body {
+    background-image:url(img/FondoHome.png);
+    background-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat ;
+    background-color: rgb(254, 206, 214);
+}
+
+#menu ul {
+    list-style-type: none;
+    margin-top: 3%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.8s;
+}
+
+#menu a:hover {
+    color:#f7d171;
+    text-decoration:underline;
+    transition: 0.2s;
+    
+    
+}
+
+#menu ol:hover{
+    transform: translate(0, -5px);
+    transition: 0.2s;
+}
+main {
+    background-color: rgb(243, 240, 236);
+    background-image: url(img/fondoKawaii2.jpg);
+    border-top: 3px solid #0b0808;
+    border-bottom: 3px solid #0b0808;
+    margin: 20px -20px auto -80px;
+    overflow: hidden;
+}
+
+#Título {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 500px;
+    padding: 20px;
+    margin: 50px;
+    left: 20%;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    text-shadow: #ffffff 1px 1px 2px;   
+    background: linear-gradient(180deg, rgb(241, 116, 229) 0%, rgb(244, 229, 243) 100%);
+}
+
+#encabezado {
+    height: 70%;
+    padding: 5% 0;
+}   
+
+#Título img{
+   width: 60%;
+   height: 70%;
+   padding: 5% 0;
+}
+
+h1{
+    font-size: 50px;
+    font-style: italic;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+footer {
+    background-color: #a25755;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin: -10px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+#SocialLinks {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#SocialLinks li:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+#SocialLinks li {
+    list-style-type: none;
+    margin: 0 10px;
+    transition: 1s;
+}
+
+#BotónVolverArriba, #BotónVolverAHome, #BotónLogOut {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 1s;
+    width: 15%;
+    margin-left: 42%;
+}
+
+#BotónVolverArriba:hover, #BotónVolverAHome:hover, #BotónLogOut:hover {
+    color: #fe0000;
+    transform: scale(1.3);
+    transition: 1,3s;
+}
+
+#seccionProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 130px auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid #0b0808;
+    border-radius: 110px;
+    box-shadow: 1px 1px 2px #ccd3d4;
+    border-color: #000000;
+    background-color: rgb(243, 155, 212);
+    height: 360px;
+    width: 25%;
+    transition: 1.3s;
+    background: -webkit-radial-gradient(center, rgb(228, 119, 217) 0%, rgb(244, 229, 243) 100%);
+}
+
+#seccionProductos p{
+    font-size: 25px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 1px solid #0b0808;
+    padding: 5px;
+    border-color: #000000;
+
+}
+.producto:hover{
+    transform: scale(1.08);
+    transition: 1.2s;
+    border-radius: 10px;
+    background: -webkit-radial-gradient(center, rgb(252, 57, 232) 40%, rgb(244, 229, 243) 100%);
+    
+}
+
+#seccionProductos a{
+    text-decoration: none;
+}

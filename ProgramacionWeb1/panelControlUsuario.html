@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="panelControlUsuario.css">
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="Comunidad.html">
+    <link rel="stylesheet" href="DetalleRecetas.html">
+    <link rel="stylesheet" href="Tienda.html">
+    <link rel="stylesheet" href="panelControlUsuario.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="menu" >
+        <ul id="menu">
+            <ol><a href="home.html">Home</a></ol>
+            <ol><a href="Comunidad.html">Comunidad</a> </ol>
+            <ol><a href="DetalleRecetas.html">Descubrir Recetas</a></ol>  
+            <ol><a href="Tienda.html">Tienda</a></ol>
+            <ol><a href="panelControlUsuario.html">Panel de Control</a></ol>
+        </ul>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
+            <ul class="menu">
+                <ol><a href="home.html">Home</a></ol>
+                <ol><a href="Comunidad.html">Comunidad</a> </ol>
+                <ol><a href="DetalleRecetas.html">Descubrir Recetas</a></ol>  
+                <ol><a href="Tienda.html">Tienda</a></ol>
+                <ol><a href="panelControlUsuario.html">Panel de Control</a></ol>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="Título">
+        <h1>Panel de Control del Usuario</h1>
+        <section>
+            <h2>Información de Cuenta</h2>
+            <form id="formDatos" action="">
+                <div class="formGrupo">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre y Apellido">
+                    <button type="button" onclick="ActualizarInformacion()">Actualizar</button>
+                    <div id="mensajeInfoActualizada">Información Actualizada con éxito!</div>
+                </div>
+
+                <div class="formGrupo">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese su nombre de Usuario">
+                    <button type="button" onclick="ActualizarInformacion()">Actualizar</button>
+                </div>
+
+                <div class="formGrupo">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su Contraseña">
+                    <button type="button" onclick="ActualizarInformacion()">Actualizar</button>
+                </div>
+
+                <div class="formGrupo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" id="correo" placeholder="usuario@dominio.com">
+                    <button type="button" onclick="ActualizarInformacion()">Actualizar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <ul>
+                <p>¡Seguinos en nuestras redes sociales!</p>
+                <ul id="SocialLinks">
+                    <li><a target="_blank" href="https://twitter.com/"><img src="img/twitterX.png" width="30" height="30" alt="twitter"> </a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><img src="img/facebook.png" width="30" height="30" alt="facebook"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><img src="img/instagram.png" width="30" height="30" alt="instagram"></a></li>
+                </ul>
+                <a id="BotónVolverArriba" href="#menu">Volver Arriba</a></li>
+                <a id="BotónVolverAHome" href="home.html">Volver a Home</a></li>
+                <a id="BotónLogOut" href="index.html">Log out</a>
+                <p>© RecipeRealm 2024. Todos los Derechos Reservados</p>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

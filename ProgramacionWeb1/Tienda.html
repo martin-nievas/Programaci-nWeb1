@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="tiendaStyles.css">
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="Comunidad.html">
+    <link rel="stylesheet" href="DetalleRecetas.html">
+    <link rel="stylesheet" href="Tienda.html">
+    <link rel="stylesheet" href="panelControlUsuario.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="menu" >
+        <ul id="menu">
+            <ol><a href="home.html">Home</a></ol>
+            <ol><a href="Comunidad.html">Comunidad</a> </ol>
+            <ol><a href="DetalleRecetas.html">Descubrir Recetas</a></ol>  
+            <ol><a href="Tienda.html">Tienda</a></ol>
+            <ol><a href="panelControlUsuario.html">Panel de Control</a></ol>
+        </ul>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
+            <ul class="menu">
+                <ol><a href="home.html">Home</a></ol>
+                <ol><a href="Comunidad.html">Comunidad</a> </ol>
+                <ol><a href="DetalleRecetas.html">Descubrir Recetas</a></ol>  
+                <ol><a href="Tienda.html">Tienda</a></ol>
+                <ol><a href="panelControlUsuario.html">Panel de Control</a></ol>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header id="Título">
+            <h1>¡Bienvenido a la Tienda de Recipe Realm!</h1>
+            <img src="img/logo negro y dorado.png" width="200" height=""  alt="">
+            <h2>Aquí podrás todos los productos necesarios para cocinar los mejores platos...</h2>
+        </header>
+        <section id="mensajeProductoAgregadoAlCarrito">¡Producto agregado al carrito!</section>
+        <section id="seccionProductos">
+            <div class="producto">
+                <h3 class="nombreProducto">Salsa Teriyaki Otafuku 350 grs.</h3>
+                <img class="imagenProducto" src="img/salsaTeriyaki.avif" alt="">
+                <p class="descripcionProducto">¡Salsa Teriyaki Otafuku!
+                    Otafuku nos presenta su Salsa Teriyaki, elaborada con salsa de soja, vino mirin, alga kombu y especias.
+                    La Salsa Teriyaki es muy popular entre los japoneses. Indicada para cualquier tipo de carnes y 
+                    brochetas a la brasa o asadas. 
+                    Asar la carne primero y verter después la salsa es otra forma no tradicional de preparar un Teriyaki.
+                    Producto de Japón.</p>
+                <p class="precio">$1000</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Salsa de Soja Orgánica | Nishiki 200 ml.</h3>
+                <img class="imagenProducto" src="img/salsaDeSojaOrganica.avif" alt="">
+                <p class="descripcionProducto">Prueba nuestra Salsa de Soja Orgánica Tamari 
+                    Salsa de Soja Nishiki, fundada en 1909, se dedica a producir una salsa de soja auténtica y deliciosa con
+                    ingredientes 100% orgánicos de origen japones. 
+                    Esta salsa de soja, apreciada en todo el mundo, resalta el sabor de platos como sashimi y verduras al vapor,
+                    y puede diluirse para disfrutarla como sopa. Hecha con ingredientes naturales.
+                    Producto de Japón.</p>
+                <p class="precio">$1150</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Salsa de Soja Kikkoman 150 ml.</h3>
+                <img class="imagenProducto" src="img/salsaSojaKikkoman.avif" alt="">
+                <p class="descripcionProducto">Házte con nuestra Salsa de Soja Kikkoman 150 ml.
+                    Autentica Soja japonesa. Ideal para cocinar verduras, sopas, guisos, hacer salsas o acompañar a las algas. 
+                    Sin aditivos.
+                    Sus ingredientes son 100% naturales sin aditivos ni conservantes. 
+                    Por otra parte las proteínas de la soja no tienen nada que envidiar a la carne, y además carecen de colesterol. 
+                    Muy beneficiosa debido a las grandes cantidades de isoflavonas y fitoestrógenos que contiene.
+                    Producto de la UE /Marca japonesa.</p>
+                    <p class="precio">$980</p>
+                    <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Fideos Tallarines Frescos | Receta Tradicional 400 grs.</h3>
+                <img class="imagenProducto" src="img/fideosTallarinesFrescos.avif" alt="">
+                <p class="descripcionProducto">Fideos Tallarines Frescos | Receta Tradicional 400 grs.
+                    Deliciosos y suaves tallarines redondos, estilo ramen, elaborados de forma tradicional. 
+                    Nuestros fideos ramen son el resultado de la fusión perfecta entre la tradición taiwanesa y la frescura 
+                    de los ingredientes más selectos.</p>
+                <p class="precio">$550</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Alga Nori Edición Pokémon 36 grs.</h3>
+                <img class="imagenProducto" src="img/algaNoriPokemon.avif" alt="">
+                <p class="descripcionProducto">Disfruta del sabor de nuestra Alga Nori Edición Pokémon
+                    Deliciosa alga nori de sabor intenso y muy sabrosa, troquelada con la forma de nuestros personajes favoritos 
+                    para decorar tus platos bento.
+                    Nori es un término japonés usado para referirse a variedades comestibles de alga marina de las diversas 
+                    especies de alga roja Porphyra. Los productos finales se elaboran cortando las algas en tiras y 
+                    secándolas mediante un proceso parecido al del papel. El nori se emplea generalmente para enrollar el onigiri y 
+                    el sushi.
+                    Producto de Japón.</p>
+                <p class="precio">$600</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Sake de Cocina Premium Umami para Cocinar | 400 ml.</h3>
+                <img class="imagenProducto" src="img/sakeDeCocinaPremium.avif" alt="">
+                <p class="descripcionProducto">Sake de Cocina Premium Umami para Cocinar | 400 ml.
+                    Sake de cocina premium, 
+                    especialmente formulado para enriquecer tus platos con un toque superior. A diferencia del sake tradicional, 
+                    el Cooking Sake Jouryo incluye aditivos como sal, lo que lo hace ideal para cocinar y no para beber. 
+                    Esencial en la cocina japonesa para intensificar el umami, neutralizar olores en carnes y pescados, y 
+                    suavizar sabores en una variedad de recetas, desde sopas hasta salsas.
+                    Producto de Japón.</p>
+                <p class="precio">$750</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Hodashi 128gr / 150gr / 256gr / 1kg</h3>
+                <img class="imagenProducto" src="img/hondashi.jpg" alt="">
+                <p class="descripcionProducto">¡Disfruta de un delicioso y auténtico sabor en tus comidas con el Hondashi/caldo de pescado!.
+                    Este caldo de pescado es perfecto para realzar el sabor de tus sopas, guisos y platos de mariscos, brindándote una 
+                    experiencia culinaria única. Al adquirir este producto, recibirás una unidad de 60 gramos, lo que te permitirá disfrutar 
+                    de múltiples preparaciones y compartir con tus seres queridos. 
+                    No esperes más para llevar a tu cocina el toque especial que solo el Hondashi/caldo de pescado puede ofrecerte.
+                    Producto de Japón.</p>
+                <p class="precio">$1100</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Arroz Japonés Instantáneo Koshihikari | Prefectura de Niigata 200 grs.</h3>
+                <img class="imagenProducto" src="img/arrozJapones.avif" alt="">
+                <p class="descripcionProducto">Arroz Japonés Instantáneo Koshihikari | Prefectura de Niigata 200 grs.
+                    Disfruta de un delicioso arroz japonés instantáneo elaborado con arroz Koshihikari de la prefectura de Niigat, procesado a baja temperatura en tan 2 minutos.
+                    Preparación:                    
+                    Abrir la tapa hasta la línea de puntos.
+                    Calentar en el microondas durante 2 minutos a 500/600W o 1000W durante 1:30 minuto.
+                    Producto de Japón.</p>
+                <p class="precio">$3500</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">PACK Inspiration Pokemon Jigglypuff | Gift Oulet.</h3>
+                <img class="imagenProducto" src="img/packJigglypuff.avif" alt="">
+                <p class="descripcionProducto">PACK Inspiration Pokemon Jigglypuff | Gift Oulet
+                    Disfruta de esta Caja Sorpresa con una gran variedad de increibles refrescos, 
+                    bebidas y tés a un precio excepcional (Puede incluir snacks)</p>
+                <p class="precio">$2000</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Bebida Nico Nico Mogu Mango Toppings Jelly | + 30 Jugo | 320 ml.</h3>
+                <img class="imagenProducto" src="img/bebidaNicoNico.avif" alt="">
+                <p class="descripcionProducto">Bebida Nico Nico Mogu Mango Toppings Jelly | + 30 Jugo | 320 ml.
+                    Una refrescante mezcla de jugosa dulzura y textura deliciosa.
+                    Prepárate para saciar tu sed y deleitar tu paladar con la refrescante combinación de un 30% de jugo de mango
+                     y Jelly Nata de Coco. 
+                     Bienvenido al mundo del mango con Jelly Nata de Coco, donde la jugosa dulzura del mango se encuentra 
+                     con la divertida textura de los trocitos de Jelly de Coco.
+                    Producto de Vietnam.</p>
+                <p class="precio">$450</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3 class="nombreProducto">Mochis relleno de Crema de Sésamo Negro 210 grs.</h3>
+                <img class="imagenProducto" src="img/mochiRelleno.avif" alt="">
+                <p class="descripcionProducto">Prueba nuestros Mochis relleno de Crema de Sésamo Negro
+                    Exquisitos Mochis Daifuku rellenos de deliciosa Crema de Sésamo Negro y Crema de Leche. 
+                    Elaborados según la receta tradicional.
+                    Sugerencia: Pruébalos también fríos. Mantenlos durante unas horas en el frigorífico y 
+                    disfrutarás de unos refrescantes y deliciosos Mochis.
+                    Producto de Taiwán.</p>
+                <p class="precio">$1500</p>
+                <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+            </div>
+            
+            <div class="producto">
+                <h3 class="nombreProducto">Curry Japonés Especiado, Java | Medio Picante.</h3>
+                <img class="imagenProducto" src="img/curryJapones.avif" alt="">
+                <p class="descripcionProducto">Hoy Come un Plato del Sabroso Curry Japonés Especiado, Java | Medio Picante.
+                    Deliciosa mezcla de salsa de curry con cebolla asada y un toque de especias exóticas que le confiere un 
+                    sabor más intenso. Sabor medio picante.
+                    Ideal para guisar con carnes, mariscos y verduras o preparar el Kare Raisu
+                    Se presenta en forma de tableta, dividida a su vez en cubos.
+                    Producto de Japón.</p>
+                    <p class="precio">$800</p>
+                    <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+                </div>
+                
+                <div class="producto">
+                    <h3 class="nombreProducto">Curry Japonés con 35 Especias, Golden Curry | 5 Raciones | Medio Picante.</h3>
+                    <img class="imagenProducto" src="img/goldenCurry.avif" alt="">
+                    <p class="descripcionProducto">Pon un punto picante con el Curry Japonés con 35 Especias, Golden Curry 
+                        | 5 Raciones | Medio Picante
+                        Curry elaborado con 35 especias diferentes, hortalizas, soja y un toque de manzana. Sabor medio picante.
+                        Ideal para acompañar carnes, mariscos y verduras o preparar el Kare Raisu.
+                        Esta Salsa Curry, se utiliza para elaborar uno de los platos más populares de Japón, 
+                        el Kare Raisu (arroz al curry) y sus principales ingredientes son verduras, carne y arroz. 
+                        Es muy fácil de elaborar gracias a este tipo de salsas.</p>
+                        <p class="precio">$990</p>
+                        <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+                    </div>
+
+                <div class="producto">
+                    <h3 class="nombreProducto">Fideos Ramen Tantanmen | Edición Pokémon 91 grs.</h3>
+                    <img class="imagenProducto" src="img/fideosRamenPokemon.avif" alt="">
+                    <p class="descripcionProducto">El auténtico sabor de Japón ahora en tu mesa. 
+                        Fideos Ramen Soja y Kombu | Receta Shokuhin de Kitakata
+                        Ramen "Bibiri Tantan" de Pokemon, con delicioso sabor a Cerdo y sésamo producidos por Sanyo Foods bajo la marca Sapporo Ichiban, 
+                        especialmente diseñados con una temática de Pikachu.
+                        Pensados para los fans de Pikachu y los Ramen.</p>
+                    <p class="precio">$1200</p>
+                    <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <h3 class="nombreProducto">Kit de Sushi para 2 Personas.</h3>
+                    <img class="imagenProducto" src="img/kitSushi.avif" alt="">
+                    <p class="descripcionProducto">Kit de Sushi para 2 Personas
+                        Set de Sushi para dos personas. Incluye:
+                        2x bandejas tipo pizarra
+                        2x cuencos de melamina
+                        2x soportes para palillos de melamina
+                        2x pares de palillos de bambú
+                        Producto de China.
+                        </p>
+                    <p class="precio">$3300</p>
+                    <button class="botonComprar" type="button" onclick="AgregarAlCarrito()">Agregar 1 unidad al carrito</button>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <section>
+            <ul>
+                <p>¡Seguinos en nuestras redes sociales!</p>
+                <ul id="SocialLinks">
+                    <li><a target="_blank" href="https://twitter.com/"><img src="img/twitterX.png" width="30" height="30" alt="twitter"> </a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><img src="img/facebook.png" width="30" height="30" alt="facebook"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><img src="img/instagram.png" width="30" height="30" alt="instagram"></a></li>
+                </ul>
+                <a id="BotónVolverArriba" href="#menu">Volver Arriba</a></li>
+                <a id="BotónVolverAHome" href="home.html">Volver a Home</a></li>
+                <a id="BotónLogOut" href="index.html">Log out</a>
+                <p>© RecipeRealm 2024. Todos los Derechos Reservados</p>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

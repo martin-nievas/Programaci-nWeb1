@@ -1,0 +1,204 @@
+
+body{
+    background-image:url(img/FondoHome.png);
+    background-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat ;
+    background-color: rgb(254, 206, 214);
+}
+
+
+#Título {
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.8s;
+}
+
+.menu a:hover {
+    color:#f7d171;
+    text-decoration:underline;
+    transition: 0.2s;
+    
+    
+}
+
+.menu ol:hover{
+    transform: translate(0, -5px);
+    transition: 0.2s;
+}
+
+footer {
+    background-color: #a25755;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    margin: -10px;
+    width: 100%;
+}
+
+#SocialLinks {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#SocialLinks li:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+#SocialLinks li {
+    list-style-type: none;
+    margin: 0 10px;
+    transition: 1s;
+}
+
+#BotónVolverArriba, #BotónVolverAHome, #BotónLogOut {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 1s;
+    width: 15%;
+    margin-left: 42%;
+}
+
+#BotónVolverArriba:hover, #BotónVolverAHome:hover, #BotónLogOut:hover {
+    color: #fe0000;
+    transform: scale(1.3);
+    transition: 1,3s;
+}
+
+#listaDeRecetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#listaDeRecetas a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+#listaDeRecetas a:hover{
+    color: #fe0000;
+}
+
+.receta{
+    border-radius: 10px;
+    margin: 12px 5px;
+    padding: 5px 15px;
+    width: 50%;
+    background: -webkit-radial-gradient(center, rgb(212, 243, 10) 0%, rgb(255, 255, 255) 100%);
+    border: 1px solid #0b0808;
+    box-shadow: 1px 1px 2px #b1b1b1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.receta img{
+width: 75%;
+border-radius: 75%;
+}
+
+.receta p{
+    width: 100%;
+    text-align: center;
+}
+
+#Intro {
+    background-color: #f7f8f3;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 10px 20px;
+    text-align: center;
+    margin: 60px auto;
+}
+#Intro h1 {
+    font-size: 40px;
+}
+#Intro h3 {
+    font-size: 25px;   
+}
+#seccionRecetas h2 {
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius:55%;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+---------------------------
+
+.hamburger-menu .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu .menu li {
+    margin-bottom: 10px;
+}
+
+.hamburger-menu .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+}
+
+.hamburger-icon ol {
+    font-size: 2vw;
+}
+.hamburger-icon {
+    display: none;
+}
+.hamburger-menu ul.menu {
+    display: none; 
+}
+.hamburger-menu ul.menu.open {
+    display: block; 
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburger-icon {display: block;}
+    .hamburger-menu ol {text-align: center;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    #menu {display: none;}
+}
+

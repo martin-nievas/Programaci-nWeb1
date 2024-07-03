@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeRealm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="" href="home.html">
+    <script src="script.js"></script>
+  
+</head>
+<!-- Proyecto 16 / RecipeRealm (Recetas de cocina) - Plataforma de Recetas y Cocina
+    
+    PAGINAS A DESAROLLAR:
+    1) Página de Registro y Login: Registro de nuevos usuarios y acceso para
+        usuarios registrados.
+    2) Panel de Usuario: Gestión de perfil, recetas guardadas y listas de
+        compras.
+    3) Página de Inicio: Introducción a la plataforma y acceso a recetas
+        populares.
+    4) Página de Búsqueda de Recetas: Exploración y búsqueda de recetas por
+        categoría o ingrediente.
+    5)Página de Detalle de Receta: Instrucciones detalladas, ingredientes y
+        comentarios.
+    6) Página de Lista de Compras: Generación y gestión de listas de compras a
+        partir de recetas.
+    7) Página de Comunidad: Comentarios y calificaciones de recetas por parte
+        de otros usuarios.
+    Uso:
+        Los usuarios se registran y acceden a su panel de usuario.
+        Desde el panel, gestionan sus recetas favoritas, listas de compras y
+        participan en la comunidad. -->
+
+<!-- Consideraciones Generales
+Para todos los proyectos, el registro y panel de usuario serán elementos
+esenciales que proporcionan una experiencia personalizada y segura. Aquí
+están algunas pautas adicionales para implementar estos componentes:
+Página de Registro y Login:
+Formularios claros para el registro de nuevos usuarios.
+Autenticación segura para proteger las cuentas de los usuarios.
+Recuperación de contraseñas para aquellos que las olviden.
+Panel de Usuario:
+Personalización del perfil, incluyendo foto, información de contacto y
+preferencias.
+Acceso rápido a las funcionalidades principales del sistema.
+Gestión de configuraciones personales y preferencias.
+Visualización de notificaciones y alertas importantes. -->
+<body>
+    <div class="fondo"></div>
+    <header id="header">
+        <section class="logo">
+                <img id="logo" src="img/logo rojo y blanco.png"  alt="">
+        </section>
+
+        <section class="contenido">
+            <div id="formulario">
+                <h3>Iniciar sesión</h3>
+                <form action="">
+                    <label for="nombre">Usuario:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre de Usuario">
+                    <label for="nombre" id="errorNombre">Debe ingresar un nombre válido</label>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su Contraseña">
+                    <label for="contraseña" id="errorContraseña">Contraseña incorrecta</label>
+                    <button id="botonIniciarSesion" type="button" onclick="IniciarSesion()">Iniciar sesión</button>
+                </form>
+            </div>  
+            <div id="iniciandoSesion">"Iniciando sesión..."</div>
+        </section>
+
+        <section class="contenido">
+            <div id="nuevoUsuario">
+                <h3>¿Eres nuevo? Regístrate aquí:</h3>
+                <button id="botonCrearUsuario" onclick="MostrarFormNuevoUsuario()">Generar Nuevo Usuario</button>
+                <form id="formNuevoUsuario" action="">
+                    <label for="nombre">Nuevo Usuario:</label>
+                    <input type="text" id="crearUsuario" name="nuevoUsuario" placeholder="Ingrese su nombre de Usuario">
+                    <label for="contraseña">Crear Contraseña:</label>
+                    <input type="password" id="nuevaContraseña" name="contraseña" placeholder="Ingrese su Contraseña">
+                    <button id="botonRegistrar" type="button" onclick="NuevoUsuario()">Registrarse</button>
+                </form>
+            </div>
+            <div id="usuarioRegistrado">"¡Usted se ha registrado correctamente!"</div>
+        </section>
+
+    </header>
+</body>
+</html>

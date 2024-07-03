@@ -1,0 +1,268 @@
+body {
+    background-image:url(img/FondoHome.png);
+    background-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat ;
+    background-color: rgb(254, 206, 214);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-top: 3%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.8s;
+}
+
+.menu a:hover {
+    color:#f7d171;
+    text-decoration:underline;
+    transition: 0.2s;
+    
+    
+}
+
+.menu ol:hover{
+    transform: translate(0, -5px);
+    transition: 0.2s;
+}
+
+#Título {
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    position: relative;
+    top:120px;
+    background: #a6c7fd;
+    border: 1px solid #0b0808;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #b1b1b1;
+}
+
+#Título img{
+    transition: 2s;
+}
+
+h1{
+    font-size: 50px;
+    font-style: italic;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+footer {
+    background-color: #a25755;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin: -10px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 150px;
+    
+}
+
+#SocialLinks {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#SocialLinks li:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+#SocialLinks li {
+    list-style-type: none;
+    margin: 0 10px;
+    transition: 1s;
+}
+
+#BotónVolverArriba, #BotónVolverAHome, #BotónLogOut {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 1s;
+    width: 15%;
+    margin-left: 42%;
+}
+
+#BotónVolverArriba:hover, #BotónVolverAHome:hover, #BotónLogOut:hover {
+    color: #fe0000;
+    transform: scale(1.3);
+    transition: 1,3s;
+}
+
+#seccionProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+}
+
+#mensajeProductoAgregadoAlCarrito {
+    display: none;
+    font-size: 25px;
+    font-style: oblique;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e41270;
+    border: 1px solid #0b0808;
+    width: 15%;
+    z-index: 2;
+    text-align: center;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botonComprar{
+    background-color: #e41270;
+    border-color: #e41270;
+    border-width: 1px;
+    color: #fff;
+    font-family: NotoSans, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: all .2s ease-out 0s;
+    border-radius: 15px;
+    border: 1px solid #0b0808;
+}
+
+.botonComprar:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.imagenProducto{
+    width: 30%;
+    height: 30%;
+}
+
+.producto{
+    display:inline;
+    text-align: center;
+    border: 1px solid #0b0808;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #ccd3d4;
+    border-color: #000000;
+    background:-webkit-radial-gradient(center, rgb(246, 191, 241) 0%, rgb(244, 229, 243) 100%);
+    transition: 1.3s;
+    width: 25%;
+    height:750px;
+    margin: 10px;
+    padding: 50px;
+}
+
+.nombreProducto{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-align:center;
+}
+
+.descripcionProducto{
+    font-size: 20px;
+    font-weight:lighter;
+    color: #000000;
+    text-align:left;
+}
+.producto:hover{
+    transform: scale(1.08);
+    transition: 1.3s;
+    background:-webkit-radial-gradient(center, rgb(247, 174, 241) 50%, rgb(244, 229, 243) 80%);
+
+}
+
+
+
+#seccionProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 130px auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.precio{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-align:center;
+    border-radius: 15px;
+    background-color: aquamarine;
+    border: 1px solid #0b0808;
+    width: 25%;
+    position:relative;
+    left: 35%;
+    margin-top: 25px;
+}
+
+-------
+
+
+.hamburger-menu .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu .menu li {
+    margin-bottom: 10px;
+}
+
+.hamburger-menu .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.hamburger-icon ol {
+    font-size: 2vw;
+}
+.hamburger-icon {
+    display: none;
+}
+.hamburger-menu ul.menu {
+    display: none; 
+}
+.hamburger-menu ul.menu.open {
+    display: block; 
+}
+
+@media screen and (max-width: 1000px) {
+ .hamburger-icon {display: block;}
+ .hamburger-menu ol {text-align: center;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    #menu {display: none;}
+}
+
