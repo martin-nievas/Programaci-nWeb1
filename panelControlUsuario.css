@@ -206,7 +206,8 @@ footer {
 
 @media screen and (max-width: 1000px) {
  .hamburger-icon {display: block;}
- .hamburger-menu ol {text-align: center;}
+ .menu ol {text-align: center; font-size: 5vw;}
+ #mensajeInfoActualizada {width: 50%; height: 5%; font-size: 3vw; padding: 5%;}
 
 }
 
